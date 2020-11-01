@@ -10,7 +10,7 @@ layout: compress
   {% include navbar.html %}
   {% include showcase.html %}
   {% include about.html %}
-  {% include contact.html %}
+  <!-- {% include contact.html %} -->
   <!--Footer begins here-->
   {% include footer.html %}
 </body>
@@ -19,20 +19,15 @@ layout: compress
     var scroll = this.scrollY;
     var item = document.getElementsByClassName('navbar-item');
     /* console.log(scroll); */
-    if (scroll < 565) {
-      item[1].classList.add('is-active');
+    if (scroll < 200) {
+      item[1].classList.remove('is-active');
       item[2].classList.remove('is-active');
       item[3].classList.remove('is-active');
     }
-    if (scroll > 565 && scroll < 1130) {
+    if (scroll > 200) {
       item[1].classList.remove('is-active');
       item[2].classList.add('is-active');
       item[3].classList.remove('is-active');
-    }
-    if (scroll > 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.add('is-active');
     }
   });
 </script>
