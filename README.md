@@ -1,3 +1,10 @@
+# Prompts page
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7858c33-f01d-4c83-a346-c03cb24ca596/deploy-status)](https://app.netlify.com/sites/nraw-prompts/deploys)
+
+A random page where I'd drop writing prompts if I felt like it.
+
+
 # WhatATheme
 **WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
 
