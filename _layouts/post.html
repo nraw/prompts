@@ -33,6 +33,9 @@ layout: compress
               <b>{{ page.date | date: "%-B %d, %Y" }}</b> by <a href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}" target="_blank"><b class="has-text-link"><u>{{site.author-name}}</u></b>
               </a>
             </p>
+            {% if page.artist.size > 0 %}
+            <p id="artist" class="content is-small has-text-weight-medium is-uppercase">Illustrated by <a href={{page.artist-link}}>{{page.artist}}</a></p>
+            {% endif %}
             {%- assign tags = page.tags -%}
             {%- unless tags.size == 0 -%}
             <p class="subtitle is-uppercase">
